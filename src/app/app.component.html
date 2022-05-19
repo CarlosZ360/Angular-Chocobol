@@ -1,0 +1,23 @@
+<div class="container">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#"><hello name="{{ name }}"></hello></a>
+      </div>
+      <ul class="nav navbar-nav pull-right">
+        <li routerLinkActive="active"><a [routerLink]="['/about']">Home</a></li>
+        <li routerLinkActive="active">
+          <a [routerLink]="['/service']">Productos</a>
+        </li>
+        <li routerLinkActive="active">
+          <a [routerLink]="['/dashboard']">Formulario Web</a>
+        </li>
+        <li routerLinkActive="active">
+          <a [routerLink]="['/contactos']">Contactanos</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <myComp></myComp>
+  <router-outlet></router-outlet>
+</div>
